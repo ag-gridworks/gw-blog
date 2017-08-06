@@ -1,0 +1,159 @@
+.go-blocks
+	+clearfix
+	background: #fff
+	+shadow-1
+	.__item
+		+make(3,6,12)
+		margin-bottom: 30px
+		.thumb
+			width: 100%
+			height: 150px
+			+transition(.2s)
+			+background(100%, center center, no-repeat)
+		.inner
+			border: 1px solid #d8d8d8
+			padding: 18px
+			text-align: center
+			.info
+				padding: 3px
+				background-color: $color-1
+				color: #fff
+				.category
+					float: left
+				.author
+					float: right
+			.title
+				+font-size(39px)
+				margin-bottom: 18px
+				font-weight: bold
+			.text
+				+font-size(21px)
+				text-align: justify
+				margin-bottom: 18px
+
+.go-blocks-full
+	+make(12,12,12)
+	padding: 0
+	.__item
+		+make(12,12,12)
+		margin-bottom: 45px
+		background-color: #FFF
+		padding: 0
+		+shadow-1
+		+transition(.2s)
+		&:hover
+			+shadow-2
+			cursor: pointer
+		&:after
+			content: "";
+			display: inline-block
+			height: 1px
+			width: 95%
+			background-color: #c7c7c7
+			position: absolute
+			left: 0
+			right: 0
+			margin: 0 auto
+			bottom: -25px
+			margin-left: 15px
+		.thumb
+			float: left
+			width: 300px
+			height: 200px
+			+background(cover, center center, no-repeat)
+			+make(3,3,12)
+		.content
+			+make(9,9,12)
+			padding-left: 30px
+			display: table
+			padding: 30px
+			.category
+				+font-size(21px)
+				background-color: $color-1
+				display: inline-block
+				padding: 3px 12px
+				font-weight: 500
+				color: #fff
+				margin-bottom: 12px
+				ul
+					list-style-type: none
+					padding: 0
+					margin: 0
+					float: right
+					padding-left: 6px
+					li
+						display: inline-block
+			.title
+				+font-size(39px)
+				font-weight: bold
+				margin-bottom: 15px
+			.text
+				line-height: 21px
+				margin-bottom: 15px
+			.footer
+				.item
+					display: inline-block
+				.author
+					img
+						width: 30px
+						height: 30px
+						border-radius: 50%
+
+.featured-blocks
+	background-color: #fff
+	.item
+		width: 100%
+		height: 300px
+		+background(cover, center center, no-repeat)
+		margin-bottom: 0
+		+transition(.2s)
+		+opacity(1)
+		overflow: hidden
+		position: relative
+		&:hover
+			+opacity(.9)
+			cursor: pointer
+	.inner
+		padding: 18px
+		color: #fff
+		+opacity(1)
+		height: 50%
+		position: absolute
+		bottom: 0
+		background-color: rgba(0, 0, 0, 0.69)
+		width: 100%
+		.category
+			+font-size(21px)
+			background-color: $color-1
+			display: inline-block
+			padding: 3px 12px
+			font-weight: 500
+			color: #fff
+			margin-bottom: 9px
+			ul
+				list-style-type: none
+				padding: 0
+				margin: 0
+				float: right
+				padding-left: 6px
+				li
+					display: inline-block
+		.title
+			+font-size(39px)
+			font-weight: bold
+			margin-bottom: 9px
+		.text
+			line-height: 21px
+			margin-bottom: 15px
+			+font-size(18px)
+		.footer
+			.footer-item
+				display: inline-block
+			.author
+				img
+					width: 30px
+					height: 30px
+					border-radius: 50%
+
+.owl-item
+	overflow: hidden

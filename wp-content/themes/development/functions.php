@@ -41,3 +41,45 @@ $menuParameters = array(
 // Theme Supports
 
 add_theme_support('menus');
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+add_theme_support( 'post-thumbnails' ); 
+
+add_theme_support( 'custom-logo' );
+
+function wpb_custom_new_menu() {
+  register_nav_menus(
+    array(
+      'navbar-menu' => __( 'Navbar (Menu Principal)' )
+    )
+  );
+}
+add_action( 'init', 'wpb_custom_new_menu' );
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Sidebar 1',
+    'id'            => 'sidebar_1',
+    'before_widget' => '<div class="sidebar-block">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4 class="go-title-sidebar title">',
+    'after_title'   => '</h4>',
+  ) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+
+?>
+

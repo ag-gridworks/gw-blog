@@ -1,6 +1,6 @@
 <?php 
 $args = array(
-'post_type' => 'NOME',
+'post_type' => 'post',
 'posts_per_page' => -1
 );
 ?>

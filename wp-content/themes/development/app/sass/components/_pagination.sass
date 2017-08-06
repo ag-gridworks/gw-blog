@@ -1,0 +1,23 @@
+.pagination
+	margin-bottom: 60px
+	.page-numbers
+		+font-size(28px)
+		margin: 0px 9px
+		border: 1px solid transparent
+		padding: 3px 9px
+		border-radius: 3px
+		+transition(.2s)
+		+breakpoint($tablet)
+			margin: 0
+		&:hover
+			border: 1px solid $color-1
+	.next, .prev
+		background-color: $color-1
+		color: #fff !important
+		&:hover
+			background-color: transparent
+			border: 1px solid $color-1
+			color: $color-1 !important
+	.current
+		background-color: $color-2
+		color: #fff

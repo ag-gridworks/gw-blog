@@ -1,0 +1,31 @@
+footer
+	background-color: #263238
+	color: #fff
+	padding: 60px 0px
+	border-top: 10px solid $color-1
+	display: table
+	.inner
+		+md(10)
+		+md-off(1)
+		&-item
+			+make(4,4,12)
+			padding: 15px
+			.title
+				+font-size(30px)
+				font-weight: bold
+				margin-bottom: 12px
+
+.corp-footer
+	background-color: $color-1
+	display: table
+	width: 100%
+	.inner
+		+make(10,10,10)
+		+make-offset(1,1,1)
+		padding: 15px 0px
+		color: #fff
+		&-left
+			float: left
+		&-right
+			float: right
+			font-weight: bold

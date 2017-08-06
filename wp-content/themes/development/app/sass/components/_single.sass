@@ -1,0 +1,45 @@
+.single-header
+	height: 50vh
+	text-align: center
+	background: url('http://localhost/blog/wp-content/uploads/2017/08/336e1ffa3b6b0e8f7a60d9f64de7ea81.jpg')
+	+background(cover, center center, no-repeat)
+
+
+.single-wrapper
+	+make(10,10,12)
+	+make-offset(1,1,0)
+	+shadow-1
+	+font-size(27px)
+	padding: 30px
+	min-height: 100vh
+	background-color: #FFF
+	&-content
+		+make(9,12,12)
+		.category
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				li
+					display: inline
+					background-color: $color-1
+					color: #fff
+					padding: 3px 9px
+					border-radius: 3px
+					+font-size(21px)
+		.title
+			+font-size(42px)
+			font-weight: bold
+			padding: 6px 0px
+
+		.info
+			margin-bottom: 30px
+			padding-bottom: 12px
+			border-bottom: 1px solid #c3c3c3
+			.item
+				display: inline
+			.date
+				border-left: 1px solid #c3c3c3
+				margin-left: 6px
+				padding-left: 12px
+	

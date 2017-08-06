@@ -1,10 +1,47 @@
-.classe
-    background-color: blue
-    color: #fff
-    padding: 15px
-    +font-size(28px)
-    +breakpoint($mobile)
-        background-color: green
+.go-navbar
+	width: 100%
+	background-color: #fff
+	position: fixed
+	z-index: 99
+	color: $color-1
+	padding: 15px
+	+shadow-1
+	.inner
+		+md(10)
+		+md-off(1)
+		padding: 0
+		position: relative
+		+center-flex
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			float: right
+			text-align: right
+			width: 100%
+			li
+				display: inline
+				a
+					padding: 5px 15px
+					//text-transform: uppercase
+					//font-weight: bold
+					color: #000
+					+font-size(28px)
+					+transition(.2s)
+					border-radius: 3px
+					&:hover
+						background-color: #e4e4e4
+			li.button-nav
+				a
+					background-color: $color-1
+					color: #fff !important
+					&:hover
+						background-color: $color-2
+		.logo
+			float: left
+			img
+				width: 55px
 
-.section
-    +make-md-column(6)
+.wp_float_right
+	width: 100%
+	float: right
